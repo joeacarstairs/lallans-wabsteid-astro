@@ -4,9 +4,9 @@ export default {
     address: [
       'Scots Language Society',
       'c/o Joe Carstairs',
-      '57 Manor Place',
+      '10/8 Viewforth Square',
       'Edinburgh',
-      'EH3 7EG',
+      'EH10 4LW',
       'United Kingdom',
     ],
   },
@@ -15,9 +15,9 @@ export default {
     address: [
       'Scots Language Society',
       'c/o Joe Carstairs',
-      '57 Manor Place',
+      '10/8 Viewforth Square',
       'Edinburgh',
-      'EH3 7EG',
+      'EH10 4LW',
       'United Kingdom',
     ],
   },
