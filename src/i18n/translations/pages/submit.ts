@@ -17,10 +17,10 @@ const tPage = {
   },
   'submit-para-1': {
     sco: () => `
-      We ar acceptin submeissions til Lallans 105.
+      We ar acceptin submeissions til Lallans 107.
     `,
     'en-GB': () => `
-      We are accepting submissions to Lallans 105.
+      We are accepting submissions to Lallans 107.
     `,
   },
   'submit-para-2': {
