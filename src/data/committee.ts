@@ -38,7 +38,7 @@ const committee: CommitteeMember[] = [
       'en-GB': `
         Rab Wilson is a poet who scrieves predominantly in the Scots language.
         He was born and remains in New Cumnock, East Ayrshire. He is also a
-        playwright, newpapaer columnist and commentator on the Scots language. 
+        playwright, newspaper columnist and commentator on the Scots language.
       `,
     },
     img: {
@@ -180,7 +180,23 @@ const committee: CommitteeMember[] = [
   },
   {
     name: 'Derrick McClure',
-    roles: [],
+    roles: [CommitteeRole.HonoraryPreses],
+    bio: {
+      sco: `
+        Derrick is a retired academic wi a record o scholarly publication i the
+        Scots leid field.  He served as Preses o the SLS for several year, and
+        as Chairman o the Forum for Research in the Languages of Scotland and
+        Ulster. Muckle o his recent wark has consisted o literar owersettins
+        intil Scots, and several o them hae been pit furth in Lallans.
+      `,
+      'en-GB': `
+        Derrick is a retired academic with a record of scholarly publication in
+        the Scots language field.  He served as Preses of the SLS for several
+        years, and as Chairman of the Forum for Research in the Languages of
+        Scotland and Ulster.  Much of his recent work has consisted of literary
+        translations into Scots, several of which have been published in Lallans.
+      `,
+    },
   },
   {
     name: 'Elaine Morton',
