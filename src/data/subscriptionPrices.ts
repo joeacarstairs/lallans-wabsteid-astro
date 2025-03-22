@@ -1,7 +1,8 @@
 import MembershipType from '$enums/MembershipType';
+import type Price from '$types/Price';
 
-export const annualSubscriptionPrice: { [key in MembershipType]: number } = {
-  [MembershipType.IndividualUk]: 20.0,
-  [MembershipType.IndividualNonUk]: 30.0,
-  [MembershipType.InstitutionUk]: 25.0,
+export const annualSubscriptionPrice: { [key in MembershipType]: Price } = {
+  [MembershipType.IndividualUk]: '25.00',
+  [MembershipType.IndividualNonUk]: '37.50',
+  [MembershipType.InstitutionUk]: '30.00',
 };

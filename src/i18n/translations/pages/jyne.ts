@@ -95,7 +95,7 @@ const tPage = {
       Here, you can pay for one year’s annual subscription to the Scots Language
       Society if you are an individual and you want your copies of <i>Lallans</i>
       sent to a UK address. This will cost
-      £${annualSubscriptionPrice[MembershipType.IndividualNonUk]}. If you want
+      £${annualSubscriptionPrice[MembershipType.IndividualUk]}. If you want
       some other kind of membership,
       <a href="/en-GB/jyne/paypal">see the other options</a>.
     `,
@@ -148,16 +148,16 @@ const tPage = {
   },
   'hou-pey-by-bank-transfer-para': {
     sco: () => `
-      To pay by bank transfer, please send £20 to the following bank details,
-      and include your name and the word 'STENT' in the reference. You may
-      need to shorten your name to fit in the reference. For example, 'J BLOGGS
-      STENT'.
+      For tae pey by bank transfer, pleise send the richt amount (see table) til
+      the follaein bank details, and include your name and the wird 'STENT' in
+      the reference. You micht hae tae shorten your name for tae fit it intil the
+      reference. For ensaumple, 'J BLOGGS STENT'.
     `,
     'en-GB': () => `
-      For tae pey by bank transfer, pleise send £20 til the follaein bank
-      details, and include your name and the wird 'STENT' in the reference. You
-      micht hae tae shorten your name for tae fit it intil the reference. For
-      ensaumple, 'J BLOGGS STENT'.
+      To pay by bank transfer, please send right amount (see table) to the
+      following bank details, and include your name and the word 'STENT' in the
+      reference. You may need to shorten your name to fit in the reference. For
+      example, 'J BLOGGS STENT'.
     `,
   },
   'hou-pey-by-cheque-title': {
