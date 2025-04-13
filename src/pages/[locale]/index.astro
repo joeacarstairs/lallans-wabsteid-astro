@@ -4,7 +4,6 @@ import localeStaticPaths from '$lib/localeStaticPaths';
 import translate from '$i18n/translate';
 import tPage from '$i18n/translations/pages/home';
 import type Locale from '$types/Locale';
-import Button from '$components/Button.astro';
 import CommitteeList from '$components/CommitteeList/CommitteeList.astro';
 
 export async function getStaticPaths() {
@@ -28,8 +27,5 @@ const t = translate(locale);
   <section>
     <h2 set:html={t(tPage, { key: 'furthsettins' })} />
     <p set:html={t(tPage, { key: 'furthsettins-para' })} />
-    <Button classNames="grid-span-3 grid-prose-end" href={`/${locale}/furthsettins`}>
-      {t(tPage, { key: 'aw-furthsettins' })} ▶
-    </Button>
   </section>
 </Page>
