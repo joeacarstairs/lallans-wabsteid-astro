@@ -77,19 +77,14 @@ const tPage = {
     sco: () => `
       We ar ane o the foremaist furthsetters o new Scots leitratur.
       Oor maist important furthsettins ar
-      <a href="/sco/furthsettins/lallans">Lallans</a> an
-      <a href="/sco/furthsettins/scotsoun">Scotsoun</a>.
+      Lallans an Scotsoun.
     `,
     'en-GB': () => `
       We are one of the leading publishers of new Scots literature.
       Our most important publications are
-      <a href="/en-GB/furthsettins/lallans">Lallans</a> and
-      <a href="/en-GB/furthsettins/scotsoun">Scotsoun</a>.
+      Lallans and
+      Scotsoun.
     `,
-  },
-  'aw-furthsettins': {
-    sco: () => 'Aw furthsettins',
-    'en-GB': () => 'All publications',
   },
 };
 

@@ -1,10 +1,9 @@
 ---
+import translate from '$i18n/translate';
+import tPage from '$i18n/translations/pages/furthsettins';
 import Page from '$layouts/Page.astro';
 import localeStaticPaths from '$lib/localeStaticPaths';
-import translate from '$i18n/translate';
-import tPage from '$i18n/translations/pages/scotsounGallery';
 import type Locale from '$types/Locale';
-import ScotsounCdGallery from '$components/ScotsounCdGallery.astro';
 
 export async function getStaticPaths() {
   return localeStaticPaths;
@@ -16,8 +15,7 @@ const t = translate(locale);
 
 <Page title={t(tPage, { key: 'title' })}>
   <section>
-    <h1>Scotsoun</h1>
-    <p>{t(tPage, { key: 'about-scotsoun' })}</p>
-    <ScotsounCdGallery />
+    <h1>{t(tPage, { key: 'title' })}</h1>
+    <p set:html={t(tPage, { key: 'para' })} />
   </section>
 </Page>

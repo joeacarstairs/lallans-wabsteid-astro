@@ -232,13 +232,13 @@ const committee: CommitteeMember[] = [
         George T Watt is a writer in Scots poesie, cutty tales and airticles.
         This cheil haes been published in mony anthologies an magazines as weel
         as Lallans. He haes produced seiveral recordings fur
-        <a href="/en-GB/furthsettins/scotsoun">Scotsoun</a> anaa.
+        Scotsoun anaa.
       `,
       'en-GB': `
         George T Watt is a writer in Scots poetry, short stories and articles.
         He has been published in many anthologies and magazines as well as
         Lallans. He has also produced several recordings for
-        <a href="/en-GB/furthsettins/scotsoun">Scotsoun</a>.
+        Scotsoun.
       `,
     },
     img: {
