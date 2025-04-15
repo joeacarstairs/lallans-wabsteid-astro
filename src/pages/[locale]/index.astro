@@ -1,10 +1,14 @@
 ---
-import Page from '$layouts/Page.astro';
-import localeStaticPaths from '$lib/localeStaticPaths';
+import Button from '$components/Button.astro';
+import CommitteeList from '$components/CommitteeList/CommitteeList.astro';
+import NewsIndex from '$components/NewsIndex/NewsIndex.astro';
 import translate from '$i18n/translate';
 import tPage from '$i18n/translations/pages/home';
+import Page from '$layouts/Page.astro';
+import localeStaticPaths from '$lib/localeStaticPaths';
+import { isBefore, isNewsItemInLocale } from '$lib/newsUtils';
 import type Locale from '$types/Locale';
-import CommitteeList from '$components/CommitteeList/CommitteeList.astro';
+import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   return localeStaticPaths;
@@ -12,9 +16,26 @@ export async function getStaticPaths() {
 
 const locale = Astro.params.locale as Locale;
 const t = translate(locale);
+
+const allNewsItemsInLocale = await getCollection('news', (item) =>
+  isNewsItemInLocale(item, locale)
+);
+const firstNewsItem = allNewsItemsInLocale.find(
+  (item) => !allNewsItemsInLocale.some((otherItem) => isBefore(item, otherItem))
+);
+if (!firstNewsItem) {
+  throw new Error('No first news item.');
+}
 ---
 
 <Page title={t(tPage, { key: 'title' })}>
+  <section id="news">
+    <h2 set:html={t(tPage, { key: 'news' })} />
+    <NewsIndex headingLevel="h3" newsItems={[firstNewsItem]} />
+    <Button classNames="grid-span-3 grid-prose-end" href={`/${locale}/news`}>
+      {t(tPage, { key: 'aw-news' })} ▶
+    </Button>
+  </section>
   <section id="about">
     <h2 set:html={t(tPage, { key: 'about-us' })} />
     <p set:html={t(tPage, { key: 'about-us-para-1' })} />

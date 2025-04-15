@@ -2,7 +2,7 @@
 import translate from '$i18n/translate';
 import tComponent from '$i18n/translations/components/newsIndex';
 import { getLocaleFromPathOrThrow } from '$lib/getLocaleFromPath';
-import { getHref } from '$lib/newsUtils';
+import { getDate, getHref } from '$lib/newsUtils';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -13,6 +13,8 @@ interface Props {
 const { headingLevel, newsItem } = Astro.props;
 const locale = getLocaleFromPathOrThrow(Astro.url.pathname);
 const t = translate(locale);
+
+const publicationDate = getDate(newsItem);
 ---
 
 <a class="news-index__item group-hover" href={getHref(newsItem)}>
@@ -22,5 +24,14 @@ const t = translate(locale);
   `}
   />
   <p>{newsItem.data.summary}</p>
+  <time datetime={publicationDate?.toISOString()}>
+    {
+      publicationDate?.toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric',
+      })
+    }
+  </time>
   <p class="link">{t(tComponent, { key: 'read-article' })}</p>
 </a>

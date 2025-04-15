@@ -1,7 +1,7 @@
 ---
 import Article from '$layouts/Article.astro';
 import { getCollection, render } from 'astro:content';
-import { getLocale, getSlug } from '$lib/newsUtils';
+import { getDate, getLocale, getSlug } from '$lib/newsUtils';
 
 export async function getStaticPaths() {
   return (await getCollection('news')).map((entry) => ({
@@ -15,11 +15,22 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+
+const publicationDate = getDate(entry);
 ---
 
 <Article title={entry.data.title}>
   <section>
     <h1>{entry.data.title}</h1>
+    <time datetime={publicationDate?.toISOString()}>
+      {
+        publicationDate?.toLocaleDateString('en-GB', {
+          day: 'numeric',
+          month: 'short',
+          year: 'numeric',
+        })
+      }
+    </time>
     <Content />
   </section>
 </Article>
