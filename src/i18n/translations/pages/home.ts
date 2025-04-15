@@ -5,6 +5,14 @@ const tPage = {
     sco: () => 'Hame',
     'en-GB': () => 'Home',
   },
+  news: {
+    sco: () => 'News',
+    'en-GB': () => 'News',
+  },
+  'aw-news': {
+    sco: () => 'Aa news',
+    'en-GB': () => 'All news',
+  },
   sangschaw: {
     sco: () => 'Sangschaw open for entries',
     'en-GB': () => 'Sangschaw open for entries',
