@@ -5,14 +5,14 @@ const tPage = {
     sco: () => 'Submit',
     'en-GB': () => 'Submit',
   },
-  '105-submissions-full': {
+  'on-pause-para-1': {
     sco: () => `
-      Lallans 105 is steikit fu, and we canna accept ony mair submeissions. We
-      will apen submeissions again ance Lallans 105 is out.
+      As o July 2025, submissions are on haud due tae staffin issues. We leuk
+      forrit tae acceptin your submissions til Lallans 107 in the near futur.
     `,
     'en-GB': () => `
-      Lallans 105 is full to the brim, and we can’t accept any more
-      submissions. We will open submissions again once Lallans 105 is out.
+      As of July 2025, submissions are on hold due to staffing issues. We look
+      forward to accepting your submissions to Lallans 107 in the near future.
     `,
   },
   'submit-para-1': {
