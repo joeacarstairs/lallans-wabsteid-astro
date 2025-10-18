@@ -1,5 +1,9 @@
 import type { CommitteeMember } from '$types/CommitteeMember';
 import CommitteeRole from '$enums/CommitteeRole';
+import AndyMatthewsImg106Src from '$images/committee/andy-matthews-106w.webp';
+import AndyMatthewsImg146Src from '$images/committee/andy-matthews-146w.webp';
+import AndyMatthewsImg192Src from '$images/committee/andy-matthews-192w.webp';
+import AndyMatthewsImg222Src from '$images/committee/andy-matthews-222w.webp';
 import RabWilsonImg106Src from '$images/committee/rab-wilson-106w.webp';
 import RabWilsonImg146Src from '$images/committee/rab-wilson-146w.webp';
 import RabWilsonImg192Src from '$images/committee/rab-wilson-192w.webp';
@@ -133,6 +137,30 @@ const committee: CommitteeMember[] = [
   {
     name: 'Andy Matthews',
     roles: [CommitteeRole.OrdinaryMember],
+    bio: {
+      sco: `
+        Born, brought up and schooled in Lochgelly and Cowdenbeath. Worked as a
+        Veterinary Surgeon for equine and ‘out of hours’ farm animals, in
+        clinical practice and in academia, based mainly in Ayrshire, until
+        retiring to Angus.  Retirin’ lat him rekennle a lifelang interaist in
+        Scots Leid an Leeterature, tae the stent o pittin pen tae paper, an
+        haein an auld cowan’s ettle at the screivin o’t.
+      `,
+      'en-GB': `
+        Born, brought up and schooled in Lochgelly and Cowdenbeath. Worked as a
+        Veterinary Surgeon for equine and ‘out of hours’ farm animals, in
+        clinical practice and in academia, based mainly in Ayrshire, until
+        retiring to Angus.  Retirin’ lat him rekennle a lifelang interaist in
+        Scots Leid an Leeterature, tae the stent o pittin pen tae paper, an
+        haein an auld cowan’s ettle at the screivin o’t.
+      `,
+    },
+    img: {
+      width106: AndyMatthewsImg106Src,
+      width146: AndyMatthewsImg146Src,
+      width192: AndyMatthewsImg192Src,
+      width222: AndyMatthewsImg222Src,
+    },
   },
 ];
 
