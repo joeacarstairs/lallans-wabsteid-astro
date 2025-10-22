@@ -5,22 +5,12 @@ const tPage = {
     sco: () => 'Submit',
     'en-GB': () => 'Submit',
   },
-  'on-pause-para-1': {
-    sco: () => `
-      As o July 2025, submissions are on haud due tae staffin issues. We leuk
-      forrit tae acceptin your submissions til Lallans 107 in the near futur.
-    `,
-    'en-GB': () => `
-      As of July 2025, submissions are on hold due to staffing issues. We look
-      forward to accepting your submissions to Lallans 107 in the near future.
-    `,
-  },
   'submit-para-1': {
     sco: () => `
-      We ar acceptin submeissions til Lallans 107.
+      We ar acceptin submeissions til Lallans 108.
     `,
     'en-GB': () => `
-      We are accepting submissions to Lallans 107.
+      We are accepting submissions to Lallans 108.
     `,
   },
   'submit-para-2': {
