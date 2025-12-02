@@ -29,6 +29,11 @@ if (!firstNewsItem) {
 ---
 
 <Page title={t(tPage, { key: 'title' })}>
+  <section>
+    <h2 set:html={t(tPage, { key: 'sangschaw' })} />
+    <p set:html={t(tPage, { key: 'sangschaw-para-1' })} />
+  </section>
+
   <section id="news">
     <h2 set:html={t(tPage, { key: 'news' })} />
     <NewsIndex headingLevel="h3" newsItems={[firstNewsItem]} />
