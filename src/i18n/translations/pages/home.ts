@@ -20,14 +20,14 @@ const tPage = {
   'sangschaw-para-1': {
     sco: () => `
       Our annual scrievin competition, the Sangschaw, is open for entries until
-      the 31st o Januar. See our
-      <a href="/sco/news/2025-12-02-sangschaw-2026">Sangschaw announcement</a>
+      the 28th o Februar. See our
+      <a href="/sco/news/2026-01-30-sangschaw-extension">Sangschaw announcement</a>
       for details.
     `,
     'en-GB': () => `
       Our annual writing competition, the Sangschaw, is open for entries until
-      the 31st of January. See our
-      <a href="/en-GB/news/2025-12-02-sangschaw-2026">Sangschaw announcement</a>
+      the 28th of February. See our
+      <a href="/en-GB/news/2026-01-30-sangschaw-extension">Sangschaw announcement</a>
       for details.
     `,
   },
