@@ -7,10 +7,10 @@ const tPage = {
   },
   'submit-para-1': {
     sco: () => `
-      We ar acceptin submeissions til Lallans 108.
+      We ar acceptin submeissions til Lallans 109 until the 15th o September 2026.
     `,
     'en-GB': () => `
-      We are accepting submissions to Lallans 108.
+      We are accepting submissions to Lallans 109 until the 15th of September 2026.
     `,
   },
   'submit-para-2': {
